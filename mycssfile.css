@@ -1,0 +1,133 @@
+/*   Guggari, Pooja Maheshwar. 
+	 Class Account# jadrn017 
+	 Fall 2017
+*/
+body { 
+    background-color: #FFF;
+	background-image: url("formimage.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+    }
+h1, h2, h3 { 
+    text-align: center;
+    }    
+
+	
+fieldset#Login {
+	width: 300px;
+	border: 1px solid #EEFFEE;
+    margin: 0 auto 0 auto;
+	background-color:rgba(10,10,10,.8);
+	color: white;
+	padding-top: 2px;
+	text-align: center;
+}
+
+p {
+	text-align: center;
+}
+	
+footer {
+	margin:1px;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+	
+fieldset, #confirmation {
+    width: 700px;
+	border: 1px solid #EEFFEE;
+    margin: 0 auto 0 auto;
+	background-color:rgba(10,10,10,.8);
+	color: white;
+	padding-top: 10px;
+	
+    }
+	
+fieldset#space {
+	width: 575px;
+	border: 1px solid #EEFFEE;
+    margin: 0 auto 0 auto;
+	background-color:rgba(10,10,10,.8);
+	color: white;
+	padding-top: 10px;
+}
+
+fieldset#space table tr th {
+	padding-right: 60px;
+}
+
+#home {
+	float: right;
+	padding-right: 20px;
+}
+
+a {
+	color: white;
+}
+	
+ul {
+	list-style-type: none;
+}
+	
+legend {
+	text-align: center;
+	font-weight: bold;
+	color: white;
+}
+    
+.buttons {
+    text-align: center;
+    padding: 25px 0 5px 0;
+    }   
+
+#inline {
+	display:inline;
+	}
+
+.inner-wrap {
+	padding: 30px;
+    background: #F8F8F8;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+	
+	
+.buttons {
+    text-align: center;
+    border-top: 1px solid #999;
+    padding-top: 5px;
+    }  
+
+#caution {
+	text-align:center;
+}
+
+#text_red {
+	color:red;
+}
+ 
+#pic {
+	margin: 0px;
+	padding: 0px;
+}
+ 
+#status, #mess {
+    height: 50px;
+    color: red;
+    font-family: sans-serif;
+    font-style: bold;
+    padding-left: 50px;
+    padding-top: 5px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    }  
+sup {
+	color: red;
+}	
+.error {
+    border:  1px solid red;   
+    background-color: #FEE;  
+    }

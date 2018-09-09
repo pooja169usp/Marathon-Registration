@@ -1,0 +1,55 @@
+/*   Guggari, Pooja Maheshwar. 
+	 Class Account# jadrn017 
+	 Fall 2017
+*/
+
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+	text-align: center;
+}
+
+header, footer {
+    padding-top: 10px;
+	padding-bottom: 10px;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+#ch_property {
+	font-style: bold;
+	text-decoration: underline;
+}
+
+.mySlides {
+	display:none;
+	width:100%;
+	height: auto;
+	text-align: center;
+	}
+
+#signup {
+	padding-top: 40px;
+	float: right;
+}
+
+a {
+	padding-right: 20px;
+	font-size: 20px;
+	color: white;
+}
+	
+.slider {
+	text-align: center;
+	
+	max-width: 100%;
+	
+}
+
+article {
+    margin-left: 20px;
+    padding: 1em;
+    overflow: hidden;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<!-- Guggari, Pooja Maheshwar. 
+	 Class Account# jadrn017 
+	 Fall 2017
+-->
+<head>
+    <meta charset="utf-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="mycssfile.css" />
+	<link rel="shortcut icon" href="logo3.ico" />
+	<script src="http://jadran.sdsu.edu/jquery/jquery.js"></script>
+	<script type="text/javascript" src="ajax_get_lib.js"></script>
+    <script type="text/javascript" src="myjsfile.js"></script>
+</head>
+<body>
+    <div>
+		<span id="home"><a href="index.html">Home</a></span><h1>Registration form for SDSU marathon</h1>
+		<div id="caution">Fields marked with <span id="text_red">*</span> are required </div>
+		<p> </p>
+		<fieldset>
+			<legend>Personal Information</legend>
+			<form name="participant" method="post" enctype="multipart/form-data" action="process_request.php">
+				<table>
+					<tr>
+						<td colspan="2"><label for="photograph"> Upload your recent picture: &nbsp;</label></td>
+						<td colspan="2" id="inline"><input type="file" name="photograph" id="photograph" accept="image/*" /></td>
+					</tr>
+					<tr>		
+						<td colspan="2"><label>Name:<sup>*</sup>&nbsp;</label></td>
+						<td><input type="text" name="fname" placeholder="First Name" size="15"/>
+						<input type="text" name="mname" placeholder="Middle Name" size="15"/>
+						<input type="text" name="lname" placeholder="Last Name" size="15"/>
+						</td>
+					</tr>
+					<tr>		
+						<td colspan="2"><label for="address1">Address Line 1:<sup>*</sup>&nbsp;</label></td>
+						<td colspan="5"><input type="text" name="address1" size="50" placeholder="Street address, Apartment number"/></td>
+					</tr> 
+					<tr>		
+						<td colspan="2"><label for="address2">Address Line 2:&nbsp;</label></td>
+						<td colspan="5"><input type="text" name="address2" size="50" /></td>
+					</tr> 
+					<tr>
+						<td colspan="2"><label>City:<sup>*</sup> &nbsp;</label></td>
+						<td><input type="text" size="10" name="city"/>
+							&nbsp;&nbsp;&nbsp;&nbsp;State <sup>*</sup> &nbsp;<input type="text" size="6" name="state" />
+							&nbsp;&nbsp;&nbsp;Zipcode <sup>*</sup> &nbsp;<input type="text" size="8" maxlength="5" name="zip" />  
+						</td>
+					</tr>					
+					<tr>
+						<td colspan="2"><label>Phone:<sup>*</sup> &nbsp;</label></td>
+						<td colspan="5">
+							+1(<input type="text" name="area_phone" size="5" maxlength="3" />)
+							<input type="text" name="prefix_phone" size="5" maxlength="3" /> -
+							<input type="text" name="phone" size="8" maxlength="4" />
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2"><label for="email">Email:<sup>*</sup> &nbsp;</label></td>
+						<td colspan="5"><input type="text" name="email" size="35" /></td>
+					</tr>
+					<tr>
+						<td colspan="2"><label>Gender:<sup>*</sup> &nbsp;</label></td>
+						<td><input type="radio" name="gender" value="male"/>Male &nbsp;
+							<input type="radio" name="gender" value="female"/>Female &nbsp;
+							<input type="radio" name="gender" value="other">Other
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2"><label>Date of birth:<sup>*</sup> &nbsp;</label></td>
+						<td><input type="text" size="4" maxlength="2" name="month" placeholder="mm" />
+							<input type="text" size="4" maxlength="2" name="day" placeholder="dd" />
+							<input type="text" size="6" maxlength="4" name="year" placeholder="yyyy" />  
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2"><label>Medical conditions:&nbsp;</label></td>
+						<td><textarea cols="40" rows="8" name="text_area" placeholder="Enter your medical conditions, if any"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2"><label>Experience Level:<sup>*</sup> &nbsp;</label></td>
+						<td>
+							<input type="radio" name="experience" value="expert"/>Expert &nbsp;
+							<input type="radio" name="experience" value="experienced"/>Experienced &nbsp;
+							<input type="radio" name="experience" value="novice">Novice
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2"><label>Category:<sup>*</sup> &nbsp;</label></td>
+						<td><input type="radio" name="category" value="teen"/>Teen &nbsp;
+							<input type="radio" name="category" value="adult"/>Adult &nbsp;
+							<input type="radio" name="category" value="senior">Senior
+						</td>
+					</tr>
+				</table>
+				<div id = "pic"> </div>
+				<div> <h3 id="status">&nbsp;</h3> </div>
+				<div class="buttons">
+					<input type="reset" />
+					<input type="submit" value="Submit" id="submit_button"/>
+				</div>        
+			</form>   
+		</fieldset> 
+		
+    </div>
+</body>
+</html>
